@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery CSS</title>
+    <link rel="stylesheet" href="./css/JQcss.css">
+    <!-- cdn을 연결할 때는 html을 통해 연결 필수!! -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <button id="toggleBtn">header 숨김/보임</button>
+
+    <h1 class="header" id="header">JQuery를 이용한 CSS, class 접근</h1>
+    <p>아래 버튼을 클릭하면 이 내용은 보이지않습니다</p>
+    <button id="btn">숨김</button>
+
+    <!-- to do list -->
+    <ul>
+        <li id="todo">
+            <!-- 체크박스가 체크되었을 때 li에 디자인 넣기 -->
+            <input type="checkbox">
+            <span>할일</span>
+            <button>X</button>
+        </li>
+    </ul>
+
+    <table id="number_btns">
+        <!-- prop("disabled", "true")를 이용하여 버튼을 누르면 사용불가 하도록-->
+        <tbody>
+            <!-- button을 누를 때마다 버튼의 글자색을 빨간색으로 변경  -->
+            <tr>
+                <td><button>1</button></td>
+                <td><button>2</button></td>
+                <td><button>3</button></td>
+            </tr>
+            <tr>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
+            </tr>
+            <tr>
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                <td><button>9</button></td>
+            </tr>
+            <tr>
+                <td><button>*</button></td>
+                <td><button>0</button></td>
+                <td><button>#</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="./js/JQcss.js"></script>
+
+</body>
+</html>
